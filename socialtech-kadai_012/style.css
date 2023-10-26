@@ -1,1 +1,528 @@
+/* PC、スマホ共通スタイル */
+body {
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+p {
+    font-size: 15px;
+}
 
+/*================
+ PC用のスタイル 
+=================*/
+
+/* 横幅設定 */
+body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  ナビゲーションのレイアウト */
+#nav-pc {
+    text-align: right;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav-pc > a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+#nav-pc > a:link {
+    color: #0d0d0d;
+}
+#nav-pc > a:visited {
+    color: #0d0d0d;
+}
+#nav-pc a:hover {
+    color: #0d0d0d;
+    text-decoration: underline;
+}
+#nav-pc a:active {
+    color: #0d0d0d;
+}
+
+/* メインビジュアル */
+#main-visual {
+    position: relative;
+    height: 400px;
+}
+#main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2710d5;
+    color: #fff;
+    border-radius: 0 0 476px 0;
+    max-width: 620px;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+#main-message > h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 100px 0 0 50px;
+}
+#main-message > p {
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+#main-visual > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 620px;
+    border-radius: 476px 0 0 0;
+    z-index: 10;
+}
+
+/* 見出し */
+h2 {
+    margin-top: 40px;
+}
+h2::after {
+    content: url(images/line.png);
+    margin: 10px;
+}
+h3 {
+    font-size: 27px;
+}
+
+/* ミッション */
+#mission {
+    margin: 80px auto;
+    width: 100%;
+}
+#mission-flex {
+    width: 100%;
+    display: flex;
+}
+#mission-flex > div {
+    width: 50%;
+    margin: 20px;
+}
+#mission-photo {
+    width: 100%;
+}
+#s2dgs {
+    margin-top: 50px;
+    width: 100%;
+}
+
+ /* プロダクト */
+ #product {
+    background-color: #fafafa;
+    margin: 80px 0 80px 0;
+    padding: 10px 40px 0px 40px;
+  }
+  
+  /* 外枠 */
+  #product > div {
+    margin-top: 40px;
+    display: flex;
+  }
+  
+  /* 左のカラム */
+  #product-left {
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  /* 右のカラム */
+  #product-right {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 80px;
+  }
+  
+  /* 画像＋説明の枠 */
+  #product-left > div {
+    position: relative;
+    height: 480px;
+    margin-right: 20px;
+  }
+  #product-right > div {
+    position: relative;
+    height: 480px;
+    margin-left: 20px;
+  }
+
+ /* 画像 */
+ .product-photo {
+    width: 100%;
+ }
+
+  /* 説明文の枠 */
+  .product-explain {
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 280px;
+    margin: 0px 40px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+  }
+
+  /* 説明文の英語 */
+  .product-explain > span {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  /* 説明文の見出し */
+  .product-explain > h3 {
+    font-size: 20px;
+    margin: 5px 0px;
+  }
+
+  /* 説明文 */
+  .product-explain > p {
+    font-size: 14px;
+    margin: 0px;
+  }
+  #product-more {
+    margin: 0px auto -42px auto;
+  }
+
+   /* ABOUT US */
+   #aboutus {
+    margin: 80px auto;
+   }
+
+   /* 3つの組織文化と画像を入れる枠 */
+   #aboutus > div {
+    display: flex;
+   }
+
+   /* 画像 */
+   .culture-img {
+    width: 100%;
+    align-self: flex-start;
+   }
+   .culture-img2 {
+    margin-top: 50px;
+    width: 100%;
+   }
+
+   /* 3つの組織文化の表 */
+    .culture-table {
+    max-width: 500px;
+    margin-right: 50px;
+    }
+
+   /* 番号 */
+    .culture-num {
+    font-size: 80px;
+    color: #2710d5;
+    margin-right: 20px;
+    }
+
+   /* 英語の見出し */
+    .culture-en {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    }
+
+   /* 日本語の見出し */
+    .culture-jp {
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    /* 説明文 */
+    .culture-description {
+    margin: 0;
+    }
+
+    /* section要素 */
+    #vision {
+        margin: 80px auto;
+    }
+
+    /* 7つすべての「行動指針」をグループ化するdiv要素 */
+    #vision >div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* 一つ一つの「行動指針」をグループ化するdiv要素 */
+    .vision-box {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    /* 画像 */
+    .vision-box > img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 30;
+    }
+
+/* 見出しと説明文をグループ化するspan要素 */
+.vision-box > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 31;
+    margin-right: 20px;
+}
+
+/* 英語の見出し */
+.vision-box > span > h4 {
+    color: #2710d5;
+    font-size: 19px;
+    margin-top: 80px;
+}
+.vision-box > span > h4::first-letter {
+    font-size: 40px;
+}
+
+/* 日本語の見出し */
+.vision-box > span > h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* 説明文 */
+.vision-box > span > p {
+    margin-top: 10px;
+}
+
+/* cases */
+#cases {
+    margin: 40px 0px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    width: 33%;
+    margin: 20px;
+}
+
+.case-card {
+    background-color: #fff;
+    min-height: 400px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+}
+.case-img {
+    width: 100%;
+}
+.case-info {
+    padding-left: 10px 20px;
+}
+.case-name {
+    color: #2710d5;
+    font-size: 19px;
+}
+.case-content {
+    font-size: 14px;
+}
+
+/* section要素 */
+#company {
+    margin: 80px auto;
+}
+
+/* 表全体 */
+#company-table {
+    width: 100%;
+}
+
+/* 2行目以降の見出し */
+.tableheader {
+    text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 100px;
+}
+
+/* 1行目の見出し */
+.tableheader-first {
+    text-align: left;
+    padding: 20px;
+    border-bottom-color: #2710d5;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #2710d5;
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 100px;
+}
+
+/* セル */
+.cell {
+    padding: 30px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+/* 1行目のセル */
+.cell-first {
+    padding: 30px;
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #ececec;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+/* iframe要素 */
+#company > iframe {
+    width: 100%;
+    height: 368px;
+    margin-top: 40px;
+}
+
+/* お問い合わせ */
+#contact {
+    margin: 80px auto;
+}
+
+/* 各フォームをグループ化するdiv要素 */
+#contact > form >div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+/* 各ラベルを囲むdiv要素 */
+.contact-heading {
+    width: 240px;
+    align-self: center;
+}
+
+/* 項目名 */
+.contact-label {
+    font-weight: bold;
+}
+
+/* 「必須」という文字 */
+.contact-span {
+    color: #ce2222;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* テキストボックス */
+.contact-textbox {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    height: 56px;
+}
+
+/* テキストエリア */
+.contact-textarea {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: #707070;
+    border-bottom-style: solid;
+    background-color: #fafafa;
+    width: 400px;
+    height: 200px;
+}
+
+/* details要素 */
+details {
+    width: 700px;
+}
+
+/* 詳細をグループ化するdiv要素 */
+details > div {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+/* 詳細の各項目の見出し */
+details > div > span {
+    font-weight: bold;
+}
+
+/* フッター */
+footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 80px 80px 30px 80px;
+}
+
+/* ロゴ画像を囲むdiv要素 */
+#footer-logo {
+    margin-bottom: 30px;
+}
+
+/* ハイパーリンクをグループ化するdiv要素 */
+#footer-link {
+    margin-bottom: 50px;
+}
+
+/* ハイパーリンク */
+#footer-link > a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* ハイパーリンクの擬似クラス */
+#footer-link > a:link {
+    color: #fff;
+}
+#footer-link > a:visited {
+    color: #fff;
+}
+#footer-link > a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+#footer-link > a:active {
+    color: #fff;
+}
+
+/* SNSボタンをグループ化するdiv要素 */
+#sns-footer {
+    text-align: left;
+    width: 100%;
+}
+
+/* SNSボタンのハイパーリンク */
+#sns-footer > a {
+    margin-right: 30px;
+}
+
+/* コピーライトを囲むspan要素 */
+#copyright {
+    color: #fff;
+    float: right;
+}
